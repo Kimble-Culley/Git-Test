@@ -13,13 +13,16 @@ using namespace std;
 
 int sum(int x);
 
+int product(int x);
+
 int main() {
   int n = 0;
 
   cout << "Input a number:" << endl;
   cin >> n;
 
-  cout << sum(n) << endl;
+  cout << "The sum: " << sum(n) << endl;
+  cout << "The product: " << product(n) << endl;
   return 0;
 }
 
@@ -31,3 +34,10 @@ int sum(int x){
   return y;
 }
   
+int product(int x){
+  int y = 1;
+  for(int i = 1; i <= x; i++){
+    y = y * i;
+  }
+  return y;
+}
